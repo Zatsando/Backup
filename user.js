@@ -56,3 +56,5 @@ user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-f
 
 user_pref("ui.systemUsesDarkTheme", 1);
 
+user_pref("browser.toolbars.bookmarks.visibility" , "always")
+
