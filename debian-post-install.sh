@@ -4,6 +4,11 @@
 sudo apt-get update;
 sudo apt-get upgrade -y;
 
+#fast apt
+sudo add-apt-repository ppa:apt-fast/stable;
+sudo apt-get update;
+sudo apt-get -y install apt-fast;
+
 #native packages
 sudo apt-get install telegram-desktop discord steam code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
 
