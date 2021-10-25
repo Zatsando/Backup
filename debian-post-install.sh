@@ -42,5 +42,10 @@ sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute m
 sudo apt update;
 sudo apt install --install-recommends winehq-stable -y;
 
+#heroic
+sudo add-apt-repository -y ppa:apt-fast/stable;
+sudo apt install -y apt-fast;
+apt-fast install -y heroic;
+
 #final
 sudo apt autoremove && sudo apt autoclean;
