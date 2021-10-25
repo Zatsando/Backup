@@ -5,7 +5,7 @@ sudo apt-get update;
 sudo apt-get upgrade -y;
 
 #native packages
-sudo apt-get install telegram-desktop discord steam code vlc streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
+sudo apt-get install telegram-desktop discord steam code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
 
 #flatpaks
 flatpak install flathub com.spotify.Client -y;
