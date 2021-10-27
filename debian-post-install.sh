@@ -52,5 +52,11 @@ sudo add-apt-repository -y ppa:apt-fast/stable;
 sudo apt install -y apt-fast;
 apt-fast install -y heroic;
 
+#protonvpn
+wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
+sudo apt-get update;
+sudo apt install protonvpn;
+sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1;
+
 #final
 sudo apt autoremove && sudo apt autoclean;
