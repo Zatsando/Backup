@@ -33,6 +33,10 @@ sudo add-apt-repository multiverse;
 sudo apt update && sudo apt install ttf-mscorefonts-installer -y;
 sudo fc-cache -f -v;
 
+wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb;
+sudo apt installl ./ttf-mscorefonts-installer_3.8_all.deb;
+sudo fc-cache -f -v;
+
 #brave browser
 sudo apt install apt-transport-https curl -y;
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg;
