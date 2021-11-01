@@ -1,33 +1,3 @@
-/*==============================================================================================*
-
-  +-----+-----+-----+-----+-----+-----+-----+
-  | █▀▀ | ▄▀█ | █▀▀ | █▀▀ | ▄▀█ | █▀▄ | █▀▀ |
-  | █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
-  +-----+-----+-----+-----+-----+-----+-----+
-
-
-  Description:    Minimalist, Simple, Keyboard Centered and heavily based on SimpleFox. 🦊
-                  What you get is a really simple one-line layout using the new Proton UI.
-
-                  > SimpleFox: https://github.com/migueravila/SimpleFox
-
-                  
-  Author:         Andreas Grafen
-                  (https://andreas.grafen.info)
-
-                  
-  Repository:     https://github.com/andreasgrafen/ag.proton
-
-
-                  Thank you Nick for all the great suggestions for improvements! ♡
-                  (https://github.com/nicksundermeyer)
-
-*==============================================================================================*/
-
-
-
-
-
 /*---+---+---+---+---+---+
  | C | O | N | F | I | G |
  +---+---+---+---+---+---*/
@@ -205,10 +175,10 @@ window,
 
 
 
-/* grey out ccons inside the toolbar to make it
+/* grey out icons inside the toolbar to make it
  * more aligned with the Black & White colour look */
 #PersonalToolbar toolbarbutton:not(:hover),
-#bookmarks-toolbar-button:not(:hover) { filter: grayscale(1) !important; }
+#bookmarks-toolbar-button:not(:hover) { filter: grayscale(0) !important; }
 
 
 /* remove window control buttons */
