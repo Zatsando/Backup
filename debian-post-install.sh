@@ -10,7 +10,7 @@ sudo apt-get update;
 sudo apt-get -y install apt-fast;
 
 #native packages
-sudo apt-get install virtualbox android-tools-adb android-tools-fastboot krita telegram-desktop discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
+sudo apt-fast install heroic virtualbox android-tools-adb android-tools-fastboot krita telegram-desktop discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
 
 #flatpaks
 flatpak install flathub com.spotify.Client -y;
@@ -50,11 +50,6 @@ sudo apt-key add winehq.key;
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main';
 sudo apt update;
 sudo apt install --install-recommends winehq-stable -y;
-
-#heroic
-sudo add-apt-repository -y ppa:apt-fast/stable;
-sudo apt install -y apt-fast;
-apt-fast install -y heroic;
 
 #protonvpn
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
