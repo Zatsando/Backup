@@ -70,5 +70,9 @@ chmod +x ./DesktopEditors-x86_64.AppImage;
 chmod +x ./ProtonUp-Qt-2.1.1-x86_64.AppImage;
 chmod +x ./Teams.AppImage;
 
+sudo add-apt-repository ppa:papirus/papirus;
+sudo apt-get update;
+sudo apt-get install papirus-icon-theme -y;
+
 #final
 sudo apt autoremove && sudo apt autoclean;
