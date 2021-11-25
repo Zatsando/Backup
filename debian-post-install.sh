@@ -10,7 +10,7 @@ sudo apt-get update;
 sudo apt-get -y install apt-fast;
 
 #native packages
-sudo apt-fast install heroic virtualbox android-tools-adb android-tools-fastboot krita telegram-desktop discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
+sudo apt-fast install heroic virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind -y;
 
 #flatpaks
 flatpak install flathub com.spotify.Client -y;
@@ -20,6 +20,7 @@ flatpak install flathub com.google.AndroidStudio -y;
 flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub com.jetbrains.IntelliJ-IDEA-Ultimate -y;
 flatpak install flathub com.jetbrains.Rider -y;
+flatpak install flathub org.telegram.desktop -y;
 
 #mono develop
 sudo apt install apt-transport-https dirmngr -y;
