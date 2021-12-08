@@ -80,5 +80,11 @@ sudo add-apt-repository ppa:papirus/papirus;
 sudo apt-get update;
 sudo apt-get install papirus-icon-theme -y;
 
+#pipewire over pulseaudio
+sudo apt update && sudo apt upgrade;
+sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream;
+sudo apt install pipewire;
+sudo apt install gstreamer1.0-pipewire libpipewire-0.3-{0,dev,modules} libspa-0.2-{bluetooth,dev,jack,modules} pipewire{,-{audio-client-libraries,pulse,media-session,bin,locales,tests}};
+
 #final
 sudo apt autoremove && sudo apt autoclean;
