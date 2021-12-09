@@ -35,11 +35,12 @@ sudo apt update && sudo apt install ttf-mscorefonts-installer -y;
 sudo fc-cache -f -v;
 
 wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb;
-sudo apt installl ./ttf-mscorefonts-installer_3.8_all.deb;
+sudo dpkg -i ttf-mscorefonts-installer_3.8_all.deb;
 sudo fc-cache -f -v;
 
 #onlyoffice
 wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb;
+sudo dpkg -i onlyoffice-desktopeditors_amd64.deb;
 
 #remove libre office
 sudo apt-get remove --purge libreoffice* -y;
@@ -65,17 +66,22 @@ sudo apt-get update;
 sudo apt install protonvpn;
 sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1;
 
+#teams
+wget wget https://go.microsoft.com/fwlink/p/?LinkID=211;
+
 #usefull appimages
-wget https://apprepo.de/uploads/package/version/2021/11/17/042834/Google-Chrome.AppImage;
+wget https://apprepo.de/appimage/download/google-chrome;
 wget https://github.com/SevenTV/chatterino7/releases/download/v7.3.4/Chatterino-x86_64.AppImage;
 wget https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.1.1/ProtonUp-Qt-2.1.1-x86_64.AppImage;
-wget https://apprepo.de/appimage/download/teams;
+wget https://gitlab.com/rswat09/gamebuntu/-/jobs/artifacts/main/download?job=build;
 
-chmod +x ./Google-Chrome.AppImage;
-chmod +x ./Chatterino-x86_64.AppImage;
-chmod +x ./ProtonUp-Qt-2.1.1-x86_64.AppImage;
-chmod +x ./Teams.AppImage;
+chmod +x Chatterino-x86_64.AppImage;
+chmod +x ProtonUp-Qt-2.1.1-x86_64.AppImage;
+unzip download?job=build;
+cd dist;
+chmod +x Gamebuntu-0.1.0.AppImage;
 
+#papirus icon-pack
 sudo add-apt-repository ppa:papirus/papirus;
 sudo apt-get update;
 sudo apt-get install papirus-icon-theme -y;
