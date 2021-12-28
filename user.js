@@ -277,3 +277,5 @@ user_pref("browser.uidensity", 1);
 user_pref("browser.search.defaultenginename", "duckduckgo.com");
 user_pref("browser.urlbar.placeholderName.private", "DuckDuckGo");
 user_pref("browser.startup.page", 1);
+user_pref("layout.css.color-mix.enabled", true);
+user_pref("browser.tabs.delayHidingAudioPlayingIconMS", 0);
