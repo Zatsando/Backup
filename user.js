@@ -4,6 +4,13 @@
 user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);
 user_pref("browser.startup.preXulSkeletonUI", false);
 user_pref("browser.startup.homepage.abouthome_cache.enabled", true);
+user_pref("gfx.webrender.all", true);
+user_pref("dom.image-lazy-loading.enabled", true);
+user_pref("browser.sessionstore.restore_on_demand", true);
+user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);
+user_pref("browser.sessionstore.restore_tabs_lazily", true);
+user_pref("browser.startup.preXulSkeletonUI", false);
+user_pref("browser.startup.homepage.abouthome_cache.enabled", true);
 
 /****************************************************************************
  * SECTION: SECUREFOX                                                       *
