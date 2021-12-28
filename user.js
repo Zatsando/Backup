@@ -243,7 +243,7 @@ user_pref("dom.forms.inputmode", true);
 
 /** TAB BEHAVIOR ***/
 user_pref("dom.disable_window_move_resize", true);
-user_pref("browser.tabs.loadBookmarksInTabs", false);
+user_pref("browser.tabs.loadBookmarksInTabs", true);
 user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("image.jxl.enabled", true);
 user_pref("editor.truncate_user_pastes", false);
