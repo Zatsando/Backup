@@ -269,5 +269,4 @@ user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-f
 user_pref("browser.uidensity", 1);
 user_pref("browser.search.defaultenginename", "duckduckgo.com");
 user_pref("browser.urlbar.placeholderName.private", "DuckDuckGo");
-user_pref("browser.sessionstore.resume_from_crash", false);
-user_pref("browser.sessionstore.resume_session_once", false);
+user_pref("browser.startup.page", 1);
