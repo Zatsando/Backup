@@ -4,6 +4,9 @@
 sudo apt-get update &&
 sudo apt-get upgrade -y;
 
+#enable wayland
+sudo nano /etc/gdm3/custom.conf
+
 #fast apt
 sudo add-apt-repository ppa:apt-fast/stable &&
 sudo apt-get update &&
@@ -16,6 +19,9 @@ sudo apt update && sudo apt install linux-xanmod;
 
 #native packages
 sudo apt-fast install qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
+
+#enable wayland on obs
+export QT_QPA_PLATFORM=wayland
 
 # install heroic games launcher
 curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest \
