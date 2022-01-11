@@ -17,6 +17,12 @@ sudo apt update && sudo apt install linux-xanmod;
 #native packages
 sudo apt-fast install qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
 
+# install heroic games launcher
+curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest \
+  | jq -r ".assets[] | select(.name | contains(\".deb\")) | .browser_download_url" \
+  | wget -i -
+sudo apt-get install -y ./heroic_*.deb;
+
 #flatpaks
 flatpak install flathub com.spotify.Client -y;
 flatpak install flathub org.signal.Signal -y;
