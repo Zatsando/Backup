@@ -7,18 +7,13 @@ sudo apt-get upgrade -y;
 #enable wayland
 sudo nano /etc/gdm3/custom.conf
 
-#fast apt
-sudo add-apt-repository ppa:apt-fast/stable &&
-sudo apt-get update &&
-sudo apt-get -y install apt-fast;
-
 #xanmod kernel
-echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list &&
-wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add - &&
+echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list;
+wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add - ;
 sudo apt update && sudo apt install linux-xanmod;
 
 #native packages
-sudo apt-fast install qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
+sudo apt install qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
 
 #enable wayland on obs
 export QT_QPA_PLATFORM=wayland
@@ -37,22 +32,13 @@ flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub org.telegram.desktop -y;
 
 #nodejs lts
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&
-sudo apt install -y nodejs;
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
+nvm install nvm install --lts;
 
 #java
-sudo apt install openjdk-11-jdk &&
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 &&
-export PATH=$PATH:$JAVA_HOME/bin;
-
-#ms fonts
-sudo add-apt-repository multiverse &&
-sudo apt update && sudo apt install ttf-mscorefonts-installer -y;
-sudo fc-cache -f -v;
-
-wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb &&
-sudo dpkg -i ttf-mscorefonts-installer_3.8_all.deb &&
-sudo fc-cache -f -v;
+sudo apt install openjdk-11-jdk; 
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64; 
+export PATH=$PATH:$JAVA_HOME/bin; 
 
 #remove libre office
 sudo apt-get remove --purge libreoffice* -y;
@@ -69,10 +55,10 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update && sudo apt install brave-browser -y;
 
 #latest wine
-sudo dpkg --add-architecture i386 &&
-wget -nc https://dl.winehq.org/wine-builds/winehq.key &&
-sudo apt-key add winehq.key &&
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main'sudo apt update &&
+sudo dpkg --add-architecture i386;
+wget -nc https://dl.winehq.org/wine-builds/winehq.key;
+sudo apt-key add winehq.key;
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main'sudo apt update;
 sudo apt install --install-recommends winehq-stable -y;
 
 #protonvpn
