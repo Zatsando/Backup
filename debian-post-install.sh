@@ -71,8 +71,11 @@ sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 -y;
 #usefull appimages
 wget https://github.com/SevenTV/chatterino7/releases/download/v7.3.4/Chatterino-x86_64.AppImage;
 chmod +x Chatterino-x86_64.AppImage;
-wget https://apprepo.de/appimage/download/google-chrome;
-chmod +x ./Google-Chrome.AppImage;
+
+#chrome (puke) only for work!
+flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo;
+sudo flatpak remote-delete flathub-beta; flatpak remote-add --user flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo;
+flatpak install com.google.Chrome;
 
 #papirus icon-pack
 sudo add-apt-repository ppa:papirus/papirus;
