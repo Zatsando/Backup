@@ -8,7 +8,7 @@ sudo apt upgrade -y;
 sudo nano /etc/gdm3/custom.conf;
 
 #native packages
-sudo apt install qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
+sudo apt install wireguard qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
 
 #enable wayland on obs
 export QT_QPA_PLATFORM=wayland;
