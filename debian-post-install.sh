@@ -1,4 +1,5 @@
 #!/bin/sh
+hostnamectl set-hostname ZatsLaptop;
 
 #update first
 sudo apt update;
