@@ -11,9 +11,6 @@ sudo nano /etc/gdm3/custom.conf;
 #native packages
 sudo apt install wireguard qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
 
-#enable wayland on obs
-export QT_QPA_PLATFORM=wayland;
-
 #flatpaks + beta support
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo;
 sudo flatpak remote-delete flathub-beta; flatpak remote-add --user flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo;
@@ -25,7 +22,12 @@ flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub org.telegram.desktop -y;
 flatpak run com.heroicgameslauncher.hgl -y
 #work only
-flatpak install com.google.Chrome;
+flatpak install com.google.Chrome -y;
+flatpak install flathub com.anydesk.Anydesk -y;
+flatpak install flathub io.github.Figma_Linux.figma_linux -y;
+
+#enable wayland on obs
+export QT_QPA_PLATFORM=wayland;
 
 #nodejs lts
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
@@ -49,12 +51,12 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update && sudo apt install brave-browser -y;
 
 #latest wine
-sudo dpkg --add-architecture i386;
-wget -nc https://dl.winehq.org/wine-builds/winehq.key;
-sudo apt-key add winehq.key;
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main';
-sudo apt update;
-sudo apt install --install-recommends winehq-stable;
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main'
+sudo apt update
+sudo apt install --install-recommends winehq-stable
 
 #protonvpn
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
