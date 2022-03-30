@@ -20,7 +20,7 @@ flatpak install flathub org.signal.Signal -y;
 flatpak install flathub com.parsecgaming.parsec -y;
 flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub org.telegram.desktop -y;
-flatpak run com.heroicgameslauncher.hgl -y
+flatpak install flathub com.heroicgameslauncher.hgl -y;
 #work only
 flatpak install com.google.Chrome -y;
 flatpak install flathub com.anydesk.Anydesk -y;
