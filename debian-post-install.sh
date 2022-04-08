@@ -9,7 +9,7 @@ sudo apt upgrade -y;
 sudo nano /etc/gdm3/custom.conf;
 
 #native packages
-sudo apt install wireguard qbittorrent minigalaxy virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
+sudo apt install wireguard qbittorrent virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird -y;
 
 #flatpaks + beta support
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo;
@@ -21,10 +21,14 @@ flatpak install flathub com.parsecgaming.parsec -y;
 flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub org.telegram.desktop -y;
 flatpak install flathub com.heroicgameslauncher.hgl -y;
+flatpak install flathub com.chatterino.chatterino -y;
+flatpak install flathub com.google.AndroidStudio -y;
+
 #work only
 flatpak install com.google.Chrome -y;
 flatpak install flathub com.anydesk.Anydesk -y;
 flatpak install flathub io.github.Figma_Linux.figma_linux -y;
+flatpak install flathub com.microsoft.Teams -y;
 
 #enable wayland on obs
 export QT_QPA_PLATFORM=wayland;
@@ -44,12 +48,6 @@ sudo apt autoremove && sudo apt autoclean -y;
 wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb;
 sudo dpkg -i onlyoffice-desktopeditors_amd64.deb;
 
-#brave browser
-sudo apt install apt-transport-https curl -y;
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg;
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list;
-sudo apt update && sudo apt install brave-browser -y;
-
 #latest wine
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
@@ -68,7 +66,6 @@ sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 -y;
 #usefull appimages
 wget https://github.com/SevenTV/chatterino7/releases/download/v7.3.4/Chatterino-x86_64.AppImage;
 chmod +x Chatterino-x86_64.AppImage;
-
 
 #papirus icon-pack
 sudo add-apt-repository ppa:papirus/papirus;
