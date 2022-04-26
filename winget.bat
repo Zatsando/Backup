@@ -1,3 +1,36 @@
 echo ms-appinstaller:?source=https://aka.ms/getwinget;
 
-winget install --id=ShareX.ShareX -e  && winget install --id=OBSProject.OBSStudio -e  && winget install --id=VideoLAN.VLC -e  && winget install --id=Discord.Discord -e  && winget install --id=Valve.Steam -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=Nvidia.GeForceExperience -e && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=OpenWhisperSystems.Signal -e  && winget install --id=Telegram.TelegramDesktop -e  && winget install --id=KDE.Krita -e  && winget install --id=7zip.7zip -e  && winget install --id=Google.AndroidStudio -e  && winget install --id=ProtonTechnologies.ProtonVPN -e  && winget install --id=AnyDeskSoftwareGmbH.AnyDesk -e  && winget install --id=OpenJS.NodeJS.LTS -e  && winget install --id=qBittorrent.qBittorrent -e  && winget install --id=Stremio.Stremio -e  && winget install --id=Mozilla.Thunderbird -e && winget install --id=Streamlink.Streamlink -e  && winget install --id=Parsec.Parsec -e && winget install -e --id Git.Git && winget install -e --id Python.Python.3 && winget install -e --id Mozilla.Firefox && winget install -e --id ONLYOFFICE.DesktopEditors && winget install -e --id DebaucheeOpenSourceGroup.Barrier && winget install -e --id Oracle.JavaRuntimeEnvironment && winget install -e --id EclipseAdoptium.Temurin.11 && winget install -e --id JetBrains.Toolbox && winget install -e --id WireGuard.WireGuard && winget install -e --id KDE.KDEConnect && winget install -e --id Playnite.Playnite && winget install -e --id RevoUninstaller.RevoUninstaller && winget install -e --id beekeeper-studio.beekeeper-studio
+winget install -e --id ShareX.ShareX;
+winget install -e --id OBSProject.OBSStudio;
+winget install -e --id VideoLAN.VLC;
+winget install -e --id Discord.Discord;
+winget install -e --id Valve.Steam;
+winget install -e --id EpicGames.EpicGamesLauncher;
+winget install -e --id Nvidia.GeForceExperience;
+winget install -e --id Microsoft.VisualStudioCode;
+winget install -e --id OpenWhisperSystems.Signal;
+winget install -e --id KDE.Krita;
+winget install -e --id 7zip.7zip;
+winget install -e --id ProtonTechnologies.ProtonVPN;
+winget install -e --id AnyDeskSoftwareGmbH.AnyDesk;
+winget install -e --id OpenJS.NodeJS.LTS;
+winget install -e --id qBittorrent.qBittorrent;
+winget install -e --id Stremio.Stremio;
+winget install -e --id Mozilla.Thunderbird;
+winget install -e --id Streamlink.Streamlink;
+winget install -e --id Parsec.Parsec;
+winget install -e --id BraveSoftware.BraveBrowser;
+winget install -e --id Git.Git;
+winget install -e --id Python.Python.3;
+winget install -e --id Mozilla.Firefox;
+winget install -e --id ONLYOFFICE.DesktopEditors;
+winget install -e --id DebaucheeOpenSourceGroup.Barrier;
+winget install -e --id Oracle.JavaRuntimeEnvironment;
+winget install -e --id EclipseAdoptium.Temurin.11;
+winget install -e --id JetBrains.Toolbox;
+winget install -e --id WireGuard.WireGuard;
+winget install -e --id KDE.KDEConnect;
+winget install -e --id Playnite.Playnite;
+winget install -e --id RevoUninstaller.RevoUninstaller;
+winget install -e --id beekeeper-studio.beekeeper-studio;
+winget install -e --id ModuleArt.QuickPictureViewer;
