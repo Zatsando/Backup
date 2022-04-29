@@ -1,5 +1,3 @@
-echo ms-appinstaller:?source=https://aka.ms/getwinget;
-
 winget install -e --id ShareX.ShareX;
 winget install -e --id OBSProject.OBSStudio;
 winget install -e --id VideoLAN.VLC;
