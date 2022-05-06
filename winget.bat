@@ -28,7 +28,7 @@ winget install -e --id EclipseAdoptium.Temurin.11;
 winget install -e --id JetBrains.Toolbox;
 winget install -e --id WireGuard.WireGuard;
 winget install -e --id KDE.KDEConnect;
-winget install -e --id Playnite.Playnite;
+winget install -e --id GOG.Galaxy;
 winget install -e --id RevoUninstaller.RevoUninstaller;
 winget install -e --id beekeeper-studio.beekeeper-studio;
 winget install -e --id ModuleArt.QuickPictureViewer;
