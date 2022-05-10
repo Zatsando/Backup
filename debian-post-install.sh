@@ -8,8 +8,14 @@ sudo apt upgrade -y;
 #enable wayland
 sudo nano /etc/gdm3/custom.conf;
 
-#native packages
-sudo apt install wireguard synaptic qbittorrent virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 pokemmo-installer git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird openjdk-11-jdk -y;
+#latest wine
+sudo dpkg --add-architecture i386 
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo mv winehq.key /usr/share/keyrings/winehq-archive.key
+wget -nc https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+sudo mv winehq-jammy.sources /etc/apt/sources.list.d/
+sudo apt update
+sudo apt install --install-recommends winehq-devel
 
 #flatpaks
 flatpak install flathub com.spotify.Client -y;
@@ -39,18 +45,9 @@ sudo apt autoremove && sudo apt autoclean -y;
 #other apps apt
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
 sudo dpkg -i protonvpn-stable-release_1.0.1-1_all.deb;
-sudo apt-get update;
-sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 -y;
-sudo apt install protonvpn -y;
 
-#latest wine
-sudo dpkg --add-architecture i386 
-wget -nc https://dl.winehq.org/wine-builds/winehq.key
-sudo mv winehq.key /usr/share/keyrings/winehq-archive.key
-wget -nc https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
-sudo mv winehq-jammy.sources /etc/apt/sources.list.d/
-sudo apt update
-sudo apt install --install-recommends winehq-devel
+#native packages
+sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 protonvpn wireguard synaptic qbittorrent virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 pokemmo-installer git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird openjdk-11-jdk -y;
 
 #final
 sudo apt autoremove;
