@@ -32,3 +32,4 @@ winget install -e --id RevoUninstaller.RevoUninstaller;
 winget install -e --id beekeeper-studio.beekeeper-studio;
 winget install -e --id ModuleArt.QuickPictureViewer;
 winget install -e --id RealVNC.VNCViewer;
+winget install -e --id Figma.Figma;
