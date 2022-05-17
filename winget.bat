@@ -1,6 +1,6 @@
 winget install -e --id ShareX.ShareX;
-winget install -e --id OBSProject.OBSStudio;
-winget install -e --id VideoLAN.VLC;
+winget install -e --id OBSProject.OBSStudio --force;
+winget install -e --id VideoLAN.VLC --force;
 winget install -e --id Discord.Discord;
 winget install -e --id Valve.Steam;
 winget install -e --id EpicGames.EpicGamesLauncher;
