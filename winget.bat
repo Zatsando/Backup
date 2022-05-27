@@ -33,3 +33,4 @@ winget install -e --id beekeeper-studio.beekeeper-studio;
 winget install -e --id ModuleArt.QuickPictureViewer;
 winget install -e --id RealVNC.VNCViewer;
 winget install -e --id Figma.Figma;
+winget install -e --id File-New-Project.EarTrumpet;
