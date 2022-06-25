@@ -1,4 +1,10 @@
 scoop bucket add extras;
+scoop bucket add main;
+scoop bucket add versions;
+scoop bucket add nonportable;
+scoop bucket add java;
+scoop bucket add niaojin0407_scoop-niaojin https://github.com/niaojin0407/scoop-niaojin;
+
 scoop install sharex;
 scoop install vlc;
 scoop install discord;
@@ -21,26 +27,14 @@ scoop install quick-picture-viewer;
 scoop install revouninstaller;
 scoop install onlyoffice-desktopeditors;
 scoop install vcredist2022;
-
-
-scoop bucket add main;
 scoop install vscode-insiders;
 scoop install 7zip;
 scoop install nodejs-lts;
-
-scoop bucket add versions;
 scoop install steam;
 scoop install python310;
-
-scoop bucket add nonportable;
 scoop install wireguard-np;
 scoop install protonvpn-np;
 scoop install wireguard-np;
-
-scoop bucket add java;
 scoop install oraclejre8;
 scoop install corretto11-jdk;
-
-//nonofficial
-scoop bucket add niaojin0407_scoop-niaojin https://github.com/niaojin0407/scoop-niaojin;
 scoop install parsec_win;
