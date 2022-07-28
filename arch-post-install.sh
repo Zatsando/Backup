@@ -13,7 +13,7 @@ cd yay;
 makepkg -si;
 
 #archrepo apps
-sudo pacman -S wine flatpak firefox-developer-edition gnome-shell-extension-appindicator qbittorrent virtualbox krita discord steam obs-studio vlc lutris streamlink python3 git gnome-tweaks neofetch barrier thunderbird -y;
+sudo pacman -S wine flatpak jre11-openjdk android-tools firefox-developer-edition gnome-shell-extension-appindicator qbittorrent virtualbox krita discord steam obs-studio vlc lutris streamlink python3 git gnome-tweaks neofetch barrier thunderbird -y;
 
 #flatpak apps
 flatpak install flathub com.spotify.Client -y;
