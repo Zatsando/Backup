@@ -43,7 +43,7 @@ wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
 sudo dpkg -i protonvpn-stable-release_1.0.1-1_all.deb;
 
 #native packages
-sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 protonvpn wireguard synaptic qbittorrent virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 pokemmo-installer git gnome-tweaks ubuntu-restricted-extras neofetch barrier refind thunderbird openjdk-11-jdk -y;
+sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 protonvpn wireguard synaptic qbittorrent virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 pokemmo-installer git gnome-tweaks ubuntu-restricted-extras neofetch barrier thunderbird openjdk-11-jdk -y;
 
 #java
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64; 

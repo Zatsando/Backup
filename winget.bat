@@ -29,3 +29,5 @@ winget install -e --id RealVNC.VNCViewer;
 winget install -e --id Figma.Figma;
 winget install -e --id File-New-Project.EarTrumpet;
 winget install -e --id Klocman.BulkCrapUninstaller;
+winget install -e --id HeroicGamesLauncher.HeroicGamesLauncher;
+winget install -e --id Playnite.Playnite;
