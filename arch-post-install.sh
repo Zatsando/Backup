@@ -28,3 +28,5 @@ flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub com.heroicgameslauncher.hgl -y;
 flatpak install flathub com.brave.Browser -y;
 flatpak install flathub com.visualstudio.code -y;
+
+wget https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9-manjaro-arch.pkg.tar.zst;
