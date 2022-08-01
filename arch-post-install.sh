@@ -22,7 +22,6 @@ flatpak install flathub com.chatterino.chatterino -y;
 flatpak install flathub com.anydesk.Anydesk -y;
 flatpak install flathub io.github.Figma_Linux.figma_linux -y;
 flatpak install flathub org.onlyoffice.desktopeditors -y;
-flatpak install flathub com.parsecgaming.parsec -y;
 flatpak install flathub org.signal.Signal -y;
 flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub com.heroicgameslauncher.hgl -y;
