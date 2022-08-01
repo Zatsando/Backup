@@ -36,3 +36,4 @@ winget install -e --id Playnite.Playnite;
 winget install -e --id GOG.Galaxy;
 
 wget https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9-x64.exe;
+wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
