@@ -13,7 +13,7 @@ winget install -e --id ProtonTechnologies.ProtonVPN;
 winget install -e --id AnyDeskSoftwareGmbH.AnyDesk --force;
 winget install -e --id OpenJS.NodeJS.LTS;
 winget install -e --id qBittorrent.qBittorrent;
-winget install -e --id KDE.Kate;
+winget install -e --id Notepad++.Notepad++;
 winget install -e --id Stremio.Stremio;
 winget install -e --id Mozilla.Thunderbird;
 winget install -e --id Streamlink.Streamlink;
