@@ -38,3 +38,4 @@ winget install -e --id GOG.Galaxy;
 wget https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9-x64.exe;
 wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
 wget https://raw.githubusercontent.com/zachvlat/myuser.js/main/user.js;
+wget https://github.com/keshavbhatt/WonderWall-Packaging/releases/download/v7.0/Wonderwall_7.0.Setup_x86_64.exe;
