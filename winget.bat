@@ -31,7 +31,6 @@ winget install -e --id RealVNC.VNCViewer;
 winget install -e --id Figma.Figma;
 winget install -e --id File-New-Project.EarTrumpet;
 winget install -e --id Klocman.BulkCrapUninstaller;
-winget install -e --id GOG.Galaxy;
 
 wget https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9-x64.exe;
 wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
