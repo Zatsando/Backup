@@ -6,7 +6,7 @@ winget install -e --id Valve.Steam;
 winget install -e --id Microsoft.VisualStudioCode;
 winget install -e --id OpenWhisperSystems.Signal;
 winget install -e --id EclipseAdoptium.TemurinJRE.11;
-winget install -e --id EclipseAdoptium.Temurin.11;
+winget install -e --id AdoptOpenJDK.OpenJDK.16;
 winget install -e --id KDE.Krita;
 winget install -e --id 7zip.7zip;
 winget install -e --id ProtonTechnologies.ProtonVPN;
