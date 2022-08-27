@@ -1,6 +1,11 @@
 #!/bin/sh
 hostnamectl set-hostname ZatsLaptop;
 
+#pantheon tweaks
+sudo apt install software-properties-common;
+sudo add-apt-repository -y ppa:philip.scott/pantheon-tweaks;
+sudo apt install pantheon-tweaks;
+
 #swap
 sudo swapoff /dev/dm-2;
 rm /dev/dm-2;
