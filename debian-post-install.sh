@@ -1,6 +1,14 @@
 #!/bin/sh
 hostnamectl set-hostname ZatsLaptop;
 
+#swap
+sudo swapoff /dev/dm-2;
+rm /dev/dm-2;
+dd if=/dev/zero of=/swapfile bs=1M count=16384;
+chmod 600 /swapfile;
+mkswap /swapfile;
+swapon /swapfile;
+
 #install nala instead of apt
 echo "deb https://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
