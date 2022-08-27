@@ -19,17 +19,7 @@ sudo nala update &&
 sudo nala install --install-recommends winehq-devel -y;
 
 #flatpaks
-flatpak install flathub com.spotify.Client -y;
-flatpak install flathub org.telegram.desktop -y;
-flatpak install flathub com.chatterino.chatterino -y;
-flatpak install flathub com.anydesk.Anydesk -y;
-flatpak install flathub io.github.Figma_Linux.figma_linux -y;
-flatpak install flathub com.usebottles.bottles -y;
-flatpak install flathub org.onlyoffice.desktopeditors -y;
-flatpak install flathub org.signal.Signal -y;
-flatpak install flathub com.stremio.Stremio -y;
-flatpak install flathub com.heroicgameslauncher.hgl -y;
-flatpak install flathub com.brave.Browser -y;
+flatpak install flathub com.spotify.Client -y;flatpak install flathub org.telegram.desktop -y;flatpak install flathub com.chatterino.chatterino -y;flatpak install flathub com.anydesk.Anydesk -y;flatpak install flathub io.github.Figma_Linux.figma_linux -y;flatpak install flathub com.usebottles.bottles -y;flatpak install flathub org.onlyoffice.desktopeditors -y;flatpak install flathub org.signal.Signal -y;flatpak install flathub com.stremio.Stremio -y;flatpak install flathub com.heroicgameslauncher.hgl -y;flatpak install flathub com.brave.Browser -y;flatpak install flathub org.qbittorrent.qBittorrent -y;flatpak install flathub org.kde.krita -y;flatpak install flathub com.discordapp.Discord -y;flatpak install flathub com.valvesoftware.Steam -y;flatpak install flathub com.visualstudio.code -y;flatpak install flathub org.videolan.VLC -y;flatpak install flathub org.mozilla.Thunderbird -y;flatpak install flathub org.mozilla.firefox -y;
 
 #nodejs lts
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
@@ -44,9 +34,11 @@ sudo nala autoremove && sudo nala autoclean -y;
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
 sudo dpkg -i protonvpn-stable-release_1.0.1-1_all.deb;
 wget https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9.deb;
+sudo dpkg -i rustdesk-1.1.9.deb;
+wget https://pokemmo.com/download_file/1/;
 
 #native packages
-sudo nala install gnome-shell-extension-manager firefox-developer-edition gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 protonvpn wireguard synaptic qbittorrent virtualbox android-tools-adb android-tools-fastboot krita discord steam obs-studio code vlc lutris streamlink python3 pokemmo-installer git gnome-tweaks ubuntu-restricted-extras neofetch barrier thunderbird openjdk-11-jdk -y;
+sudo nala install gnome-shell-extension-manager gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 wireguard synaptic android-tools-adb android-tools-fastboot streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch openjdk-11-jdk -y;
 
 #java
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64; 
@@ -54,4 +46,3 @@ export PATH=$PATH:$JAVA_HOME/bin;
 
 #final
 sudo nala autoremove;
-sudo nala autoclean;
