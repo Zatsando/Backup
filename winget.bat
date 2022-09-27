@@ -27,7 +27,6 @@ winget install -e --id WireGuard.WireGuard;
 winget install -e --id KDE.KDEConnect;
 winget install -e --id ModuleArt.QuickPictureViewer;
 winget install -e --id RealVNC.VNCViewer;
-winget install -e --id Figma.Figma;
 winget install -e --id File-New-Project.EarTrumpet;
 winget install -e --id Klocman.BulkCrapUninstaller;
 winget install -e --id RustDesk.RustDesk;
