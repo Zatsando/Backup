@@ -28,7 +28,7 @@ sudo apt update &&
 sudo apt install --install-recommends winehq-devel -y;
 
 #flatpaks
-flatpak install flathub com.github.bluesabre.darkbar -y;flatpak install flathub org.telegram.desktop -y;flatpak install flathub com.usebottles.bottles -y;flatpak install flathub org.onlyoffice.desktopeditors -y;flatpak install flathub org.signal.Signal -y;flatpak install flathub com.stremio.Stremio -y;flatpak install flathub com.brave.Browser -y;flatpak install flathub org.qbittorrent.qBittorrent -y;flatpak install flathub org.kde.krita -y;flatpak install flathub com.discordapp.Discord -y;flatpak install flathub com.valvesoftware.Steam -y;flatpak install flathub com.visualstudio.code -y;flatpak install flathub org.videolan.VLC -y;flatpak install flathub org.mozilla.Thunderbird -y;flatpak install flathub org.mozilla.firefox -y;
+flatpak install flathub me.hyliu.fluentreader -y;flatpak install flathub com.github.bluesabre.darkbar -y;flatpak install flathub org.telegram.desktop -y;flatpak install flathub com.usebottles.bottles -y;flatpak install flathub org.onlyoffice.desktopeditors -y;flatpak install flathub org.signal.Signal -y;flatpak install flathub com.stremio.Stremio -y;flatpak install flathub com.brave.Browser -y;flatpak install flathub org.qbittorrent.qBittorrent -y;flatpak install flathub org.kde.krita -y;flatpak install flathub com.discordapp.Discord -y;flatpak install flathub com.valvesoftware.Steam -y;flatpak install flathub com.visualstudio.code -y;flatpak install flathub org.videolan.VLC -y;flatpak install flathub org.mozilla.Thunderbird -y;flatpak install flathub org.mozilla.firefox -y;
 
 #nodejs lts
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
