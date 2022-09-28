@@ -12,6 +12,7 @@ winget install -e --id KDE.Krita;
 winget install -e --id 7zip.7zip;
 winget install -e --id ProtonTechnologies.ProtonVPN;
 winget install -e --id OpenJS.NodeJS.LTS;
+winget install -e --id yang991178.fluent-reader;
 winget install -e --id qBittorrent.qBittorrent;
 winget install -e --id Notepad++.Notepad++;
 winget install -e --id Stremio.Stremio;
