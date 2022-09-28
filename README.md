@@ -43,7 +43,7 @@ Now that yay is enabled we will start to implement our fixes:
 ``yay -S pantheon-unstable gala-git switchboard-plug-pantheon-tweaks-git pantheon-print file-roller``
 You should remove conflicting dependencies (if you asked!).
 
-Then you can log out and log in to implement the changes. As far as it goes for the dock, you can download this (theme)[https://www.gnome-look.org/p/1492550/] and then unpack it at ~./local/share/plank/themes/. Then you can right-click on the dock (without touching any icon) and press preferences to choose the new theme (this is for the dark theme but you can use whatever you want!).
+Then you can log out and log in to implement the changes. As far as it goes for the dock, you can download this https://www.gnome-look.org/p/1492550 and then unpack it at ~./local/share/plank/themes/. Then you can right-click on the dock (without touching any icon) and press preferences to choose the new theme (this is for the dark theme but you can use whatever you want!).
 
 From this point on you can start using your bare bones elementary OS arch Linux system. As a bonus content I want you to point out some QoL improvement you can make, because pantheon DE is very opinionated and some stuff maybe missing for some of you: Wingpanel app indicators (Telegram, Discord, whatever app uses them): 
 ``yay -S wingpanel-standalone-git`` and then
