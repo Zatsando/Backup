@@ -35,3 +35,4 @@ winget install -e --id RustDesk.RustDesk;
 wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
 wget https://raw.githubusercontent.com/zachvlat/myuser.js/main/user.js;
 wget https://github.com/keshavbhatt/WonderWall-Packaging/releases/download/v7.0/Wonderwall_7.0.Setup_x86_64.exe;
+wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe;
