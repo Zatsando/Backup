@@ -4,7 +4,7 @@ winget install -e --id VideoLAN.VLC --force;
 winget install -e --id Discord.Discord;
 winget install -e --id valinet.ExplorerPatcher.Prerelease;
 winget install -e --id Valve.Steam;
-winget install -e --id Microsoft.VisualStudioCode;
+winget install -e --id VSCodium.VSCodium;
 winget install -e --id OpenWhisperSystems.Signal;
 winget install -e --id EclipseAdoptium.TemurinJRE.11;
 winget install -e --id AdoptOpenJDK.OpenJDK.16;
