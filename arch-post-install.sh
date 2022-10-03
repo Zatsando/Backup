@@ -8,7 +8,7 @@ sudo nano /etc/pacman.conf;
 
 #yay
 git clone https://aur.archlinux.org/yay.git;
-sudo chown zatsando:users yay;
+sudo chown $USER:users yay;
 cd yay;
 makepkg -si;
 
