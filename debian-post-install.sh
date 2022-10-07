@@ -28,7 +28,7 @@ sudo apt update &&
 sudo apt install --install-recommends winehq-devel -y;
 
 #flatpaks
-flatpak install flathub me.hyliu.fluentreader -y;flatpak install flathub com.github.bluesabre.darkbar -y;flatpak install flathub org.telegram.desktop -y;flatpak install flathub com.usebottles.bottles -y;flatpak install flathub org.onlyoffice.desktopeditors -y;flatpak install flathub org.signal.Signal -y;flatpak install flathub com.stremio.Stremio -y;flatpak install flathub com.brave.Browser -y;flatpak install flathub org.qbittorrent.qBittorrent -y;flatpak install flathub org.kde.krita -y;flatpak install flathub com.discordapp.Discord -y;flatpak install flathub com.valvesoftware.Steam -y;flatpak install flathub com.visualstudio.code -y;flatpak install flathub org.videolan.VLC -y;flatpak install flathub org.mozilla.Thunderbird -y;flatpak install flathub org.mozilla.firefox -y;
+flatpak install flathub me.hyliu.fluentreader -y;flatpak install flathub com.github.bluesabre.darkbar -y;flatpak install flathub org.telegram.desktop -y;flatpak install flathub com.usebottles.bottles -y;flatpak install flathub org.onlyoffice.desktopeditors -y;flatpak install flathub org.signal.Signal -y;flatpak install flathub com.stremio.Stremio -y;flatpak install flathub org.qbittorrent.qBittorrent -y;flatpak install flathub com.github.maoschanz.drawing -y;flatpak install flathub com.discordapp.Discord -y;flatpak install flathub com.valvesoftware.Steam -y;flatpak install flathub com.visualstudio.code -y;flatpak install flathub org.videolan.VLC -y;flatpak install flathub org.mozilla.Thunderbird -y;flatpak install flathub org.mozilla.firefox -y;
 
 #nodejs lts
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
@@ -41,7 +41,7 @@ sudo apt autoremove && sudo apt autoclean -y;
 
 #native packages
 sudo apt update;
-sudo apt install protonvpn libwingpanel-dev indicator-application libglib2.0-dev libgranite-dev libindicator3-dev gnome-shell-extension-manager gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 wireguard synaptic android-tools-adb android-tools-fastboot streamlink python3 git gnome-tweaks ubuntu-restricted-extras neofetch openjdk-11-jdk -y;
+sudo apt install libwingpanel-dev indicator-application libglib2.0-dev libgranite-dev libindicator3-dev gir1.2-appindicator3-0.1 wireguard synaptic android-tools-adb android-tools-fastboot streamlink python3 git ubuntu-restricted-extras neofetch openjdk-17-jdk -y;
 
 #other apps apt
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb;
