@@ -12,7 +12,6 @@ winget install -e --id KDE.Krita;
 winget install -e --id 7zip.7zip;
 winget install -e --id ProtonTechnologies.ProtonVPN;
 winget install -e --id OpenJS.NodeJS.LTS;
-winget install -e --id yang991178.fluent-reader;
 winget install -e --id qBittorrent.qBittorrent;
 winget install -e --id Notepad++.Notepad++;
 winget install -e --id Stremio.Stremio;
@@ -33,6 +32,6 @@ winget install -e --id Klocman.BulkCrapUninstaller;
 winget install -e --id RustDesk.RustDesk;
 
 wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
-wget https://raw.githubusercontent.com/zachvlat/myuser.js/main/user.js;
-wget https://github.com/keshavbhatt/WonderWall-Packaging/releases/download/v7.0/Wonderwall_7.0.Setup_x86_64.exe;
 wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe;
+
+git clone https://github.com/zachvlat/firefox.git;

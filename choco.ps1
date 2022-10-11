@@ -31,6 +31,5 @@ choco install vnc-viewer -y
 choco install rustdesk -y
 choco install blitz.gg -y
 
-wget https://github.com/yang991178/fluent-reader/releases/download/v1.1.2/Fluent.Reader.Setup.1.1.2.x64.exe -o Fluent.Reader.Setup.1.1.2.x64.exe;
 wget https://github.com/ModuleArt/quick-picture-viewer/releases/download/v3.1.4/QuickPictureViewer-Setup.exe -o QuickPictureViewer-Setup.exe;
 wget https://github.com/valinet/ExplorerPatcher/releases/download/22621.608.51.1_e4e3c61/ep_setup.exe -o ep_setup.exe;
