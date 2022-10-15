@@ -30,6 +30,7 @@ winget install -e --id RealVNC.VNCViewer;
 winget install -e --id File-New-Project.EarTrumpet;
 winget install -e --id Klocman.BulkCrapUninstaller;
 winget install -e --id RustDesk.RustDesk;
+winget install -e --id Nextcloud.NextcloudDesktop;
 
 wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
 wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe;

@@ -30,6 +30,7 @@ choco install onlyoffice -y
 choco install vnc-viewer -y
 choco install rustdesk -y
 choco install blitz.gg -y
+choco install nextcloud-client -y
 
 wget https://github.com/ModuleArt/quick-picture-viewer/releases/download/v3.1.4/QuickPictureViewer-Setup.exe -o QuickPictureViewer-Setup.exe;
 wget https://github.com/valinet/ExplorerPatcher/releases/download/22621.608.51.1_e4e3c61/ep_setup.exe -o ep_setup.exe;
