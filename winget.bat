@@ -1,4 +1,5 @@
 winget install -e --id ShareX.ShareX;
+winget install -e --id Google.AndroidStudio;
 winget install -e --id OBSProject.OBSStudio --force;
 winget install -e --id VideoLAN.VLC --force;
 winget install -e --id Discord.Discord;
@@ -31,8 +32,6 @@ winget install -e --id File-New-Project.EarTrumpet;
 winget install -e --id Klocman.BulkCrapUninstaller;
 winget install -e --id RustDesk.RustDesk;
 winget install -e --id Nextcloud.NextcloudDesktop;
+winget install -e --id Blitz.Blitz;
 
-wget https://github.com/alesimula/wsa_pacman/releases/download/v1.3.6/WSA-pacman-v1.3.6-installer.exe;
-wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe;
-
-git clone https://github.com/zachvlat/firefox.git;
+wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe -o setup_galaxy_1.2.67.58.exe;
