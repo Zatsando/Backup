@@ -12,6 +12,7 @@ choco install kdeconnect-kde -y
 choco install krita -y
 choco install nodejs -y
 choco install notepadplusplus -y
+choco install figma -y
 choco install obs-studio -y
 choco install virtualbox -y
 choco install protonvpn -y
