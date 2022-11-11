@@ -2,7 +2,6 @@
 scoop bucket add anderlli0053_DEV-tools https://github.com/anderlli0053/DEV-tools;
 scoop bucket add versions;
 scoop bucket add java;
-scoop bucket add main;
 scoop bucket add nonportable;
 
 scoop install sharex;
