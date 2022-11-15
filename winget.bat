@@ -12,7 +12,7 @@ winget install -e --id EclipseAdoptium.Temurin.17.JDK;
 winget install -e --id KDE.Krita;
 winget install -e --id 7zip.7zip;
 winget install -e --id ProtonTechnologies.ProtonVPN;
-winget install -e --id OpenJS.NodeJS.LTS;
+winget install -e --id CoreyButler.NVMforWindows;
 winget install -e --id qBittorrent.qBittorrent;
 winget install -e --id Notepad++.Notepad++;
 winget install -e --id Stremio.Stremio;
