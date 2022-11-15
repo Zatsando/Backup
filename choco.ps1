@@ -6,6 +6,7 @@ choco install discord -y
 choco install eartrumpet -y
 choco install firefox -y
 choco install git -y
+choco install nvm -y
 choco install adoptopenjdk12jre -y
 choco install oracle17jdk -y
 choco install kdeconnect-kde -y
