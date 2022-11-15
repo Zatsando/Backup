@@ -19,7 +19,7 @@ scoop install krita;
 scoop install 7zip;
 scoop install figma;
 scoop install protonvpn-np;
-scoop install nodejs-lts;
+scoop install nvm;
 scoop install qbittorrent;
 scoop install notepadplusplus;
 scoop install stremio;
