@@ -20,7 +20,7 @@ winget install -e --id Mozilla.Thunderbird;
 winget install -e --id Streamlink.Streamlink;
 winget install -e --id Git.Git;
 winget install -e --id Python.Python.3;
-winget install -e --id Mozilla.Firefox.DeveloperEdition;
+winget install -e --id Mozilla.Firefox;
 winget install -e --id ONLYOFFICE.DesktopEditors;
 winget install -e --id WireGuard.WireGuard;
 winget install -e --id KDE.KDEConnect;

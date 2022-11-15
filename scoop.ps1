@@ -38,5 +38,5 @@ scoop install bulk-crap-uninstaller;
 scoop install rustdesk;
 scoop install nextcloud;
 
-wget https://blitz.gg/download/win -o Blitz-2.0.14.exe
+wget https://blitz.gg/download/win -o .exe
 wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe -o setup_galaxy_1.2.67.58.exe;
