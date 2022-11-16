@@ -11,7 +11,7 @@ scoop install vlc;
 scoop install discord;
 scoop install explorerpatcher;
 scoop install steam;
-scoop install vscode-insiders;
+scoop install vscode;
 scoop install signal;
 scoop install temurin17-jdk;
 scoop install temurin17-jre;
