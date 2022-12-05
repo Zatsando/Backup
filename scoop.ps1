@@ -1,5 +1,7 @@
-﻿scoop bucket add extras;
-scoop bucket add anderlli0053_DEV-tools https://github.com/anderlli0053/DEV-tools;
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+
+scoop bucket add extras;
 scoop bucket add versions;
 scoop bucket add java;
 scoop bucket add nonportable;
