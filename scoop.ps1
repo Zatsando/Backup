@@ -11,7 +11,6 @@ scoop install android-studio;
 scoop install obs-studio;
 scoop install vlc;
 scoop install discord;
-scoop install explorerpatcher;
 scoop install steam;
 scoop install vscode;
 scoop install signal;
@@ -21,7 +20,6 @@ scoop install krita;
 scoop install 7zip;
 scoop install figma;
 scoop install protonvpn-np;
-scoop install nilesoft-shell;
 scoop install nvm;
 scoop install qbittorrent;
 scoop install notepadplusplus;
@@ -41,5 +39,6 @@ scoop install bulk-crap-uninstaller;
 scoop install rustdesk;
 scoop install nextcloud;
 
+wget https://github.com/valinet/ExplorerPatcher/releases/download/22621.608.51.6_d262c41/ep_setup.exe -o ep_setup.exe;
 wget https://blitz.gg/download/win -o .exe
 wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe -o setup_galaxy_1.2.67.58.exe;
