@@ -1,12 +1,12 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
+scoop install git
 
 scoop bucket add extras;
 scoop bucket add versions;
 scoop bucket add java;
-scoop bucket add nonportable;
 
-scoop install sharex android-studio obs-studio vlc discord steam vscode signal temurin17-jdk temurin17-jre krita 7zip figma protonvpn-np nvm qbittorrent notepadplusplus stremio thunderbird streamlink git python firefox onlyoffice-desktopeditors wireguard-np kdeconnect quick-picture-viewer vncviewer eartrumpet bulk-crap-uninstaller rustdesk nextcloud
+scoop install brave sharex android-studio obs-studio vlc discord steam vscode signal temurin17-jdk temurin17-jre krita 7zip figma nvm qbittorrent notepadplusplus stremio thunderbird streamlink python firefox onlyoffice-desktopeditors kdeconnect quick-picture-viewer vncviewer eartrumpet bulk-crap-uninstaller rustdesk nextcloud
 
 wget https://github.com/valinet/ExplorerPatcher/releases/download/22621.608.51.6_d262c41/ep_setup.exe -o ep_setup.exe;
 wget https://blitz.gg/download/win -o .exe
