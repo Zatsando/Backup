@@ -12,3 +12,9 @@ scoop install sharex android-studio obs-studio vlc discord steam vscode signal t
 wget https://github.com/valinet/ExplorerPatcher/releases/download/22621.608.51.6_d262c41/ep_setup.exe -o ep_setup.exe;
 wget https://blitz.gg/download/win -o .exe
 wget https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_1.2.67.58.exe -o setup_galaxy_1.2.67.58.exe;
+
+# Brave
+New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Browser/User Data" -Target "$env:USERPROFILE\scoop\persist\brave\User Data"
+
+#ungoogled-chromium
+New-Item -ItemType Junction -Path "$env:AppData/../Local/Chromium/User Data" -Target "$env:USERPROFILE\scoop\persist\ungoogled-chromium\User Data"
