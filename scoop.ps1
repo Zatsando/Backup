@@ -7,7 +7,7 @@ scoop bucket add versions;
 scoop bucket add java;
 scoop bucket add games;
 
-scoop install sharex android-studio obs-studio vlc discord steam vscode signal temurin17-jdk temurin17-jre krita 7zip figma nvm qbittorrent notepadplusplus stremio mailspring streamlink python onlyoffice-desktopeditors kdeconnect quick-picture-viewer vncviewer eartrumpet bulk-crap-uninstaller rustdesk nextcloud
+scoop install winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin17-jdk temurin17-jre krita 7zip figma qbittorrent notepadplusplus stremio mailspring streamlink python onlyoffice-desktopeditors kdeconnect quick-picture-viewer vncviewer eartrumpet bulk-crap-uninstaller rustdesk nextcloud
 
 winget install -e --id Brave.Brave;
 winget install -e --id LibreWolf.LibreWolf;
