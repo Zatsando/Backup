@@ -13,3 +13,19 @@ winget install -e --id Brave.Brave;
 winget install -e --id LibreWolf.LibreWolf;
 winget install -e --id valinet.ExplorerPatcher;
 winget install -e --id cangzhang.champ-r;
+
+# Disable feature updates
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DeferFeatureUpdates" -Value 1 -Type DWORD
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DeferFeatureUpdatesPeriodInDays" -Value 365 -Type DWORD
+
+# Enable security updates
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DeferQualityUpdates" -Value 0 -Type DWORD
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "TargetReleaseVersion" -Value "1" -Type DWORD
+
+# Disable telemetry
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0 -Type DWORD
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppCompat" -Name "AITEnable" -Value 0 -Type DWORD
+
+# Enable NumLock on startup
+$regPath = "HKU\.DEFAULT\Control Panel\Keyboard"
+Set-ItemProperty -Path $regPath -Name "InitialKeyboardIndicators" -Value "2" -Type String
