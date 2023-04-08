@@ -10,7 +10,7 @@ scoop bucket add versions;
 scoop bucket add java;
 scoop bucket add games;
 
-scoop install winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin17-jdk temurin17-jre krita 7zip figma qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect quick-picture-viewer vncviewer eartrumpet bulk-crap-uninstaller rustdesk nextcloud putty heroic-games-launcher playnite fastfetch nano
+scoop install winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip figma qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect quick-picture-viewer vncviewer eartrumpet bulk-crap-uninstaller rustdesk nextcloud putty heroic-games-launcher playnite fastfetch nano
 
 winget install -e --id Brave.Brave;
 winget install -e --id LibreWolf.LibreWolf;
