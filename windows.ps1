@@ -11,7 +11,7 @@ scoop bucket add java;
 scoop bucket add games;
 scoop bucket add nonportable;
 
-scoop install brave winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip figma qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect quick-picture-viewer eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch nano sudo;
+scoop install brave winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip figma qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect quick-picture-viewer eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo;
 
 sudo scoop install parsec-np wireguard-np;
 
