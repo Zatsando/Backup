@@ -37,3 +37,7 @@ sudo add-apt-repository ppa:kisak/kisak-mesa && sudo dpkg --add-architecture i38
 
 #useful for lol cache
 sudo sh -c 'sysctl -w abi.vsyscall32=0' && sudo sysctl -w abi.vsyscall32=0
+
+#git config
+git config --global user.name "zachvlat"
+git config --global user.email "zachariasvlatakis@gmail.com"
