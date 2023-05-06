@@ -4,7 +4,9 @@
 hostnamectl set-hostname ZatsLaptop;
 
 #native packages
-wireguard android-tools-adb android-tools-fastboot streamlink python3 git neofetch openjdk-17-jdk
+wireguard ttf-mscorefonts-installer ubuntu-restricted-extras android-tools-adb android-tools-fastboot streamlink python3 git neofetch openjdk-17-jdk
+
+sudo fc-cache -f -v
 
 #swap
 swapon;
@@ -29,3 +31,9 @@ nvm install --lts;
 #java
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64; 
 export PATH=$PATH:$JAVA_HOME/bin;
+
+#intel/amd graphics
+sudo add-apt-repository ppa:kisak/kisak-mesa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt upgrade && sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
+
+#useful for lol cache
+sudo sh -c 'sysctl -w abi.vsyscall32=0' && sudo sysctl -w abi.vsyscall32=0
