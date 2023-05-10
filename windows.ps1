@@ -3,25 +3,29 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Open terminal emulator with normal access
 irm get.scoop.sh | iex
-scoop install git
 
+#git config
+scoop install git
+git config --global user.name "zachvlat"
+git config --global user.email "zachariasvlatakis@gmail.com"
+
+#add buckets
 scoop bucket add extras;
 scoop bucket add versions;
 scoop bucket add java;
 scoop bucket add games;
 scoop bucket add nonportable;
 
-scoop install firefox brave winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip figma qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect quick-picture-viewer eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo;
+#install scoop packages
+scoop install firefox brave winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf;
 
-#brave
+#brave fix
 New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Browser/User Data" -Target "$env:USERPROFILE\scoop\persist\brave\User Data"
 
+#install np scoops
 sudo scoop install parsec-np wireguard-np;
 
-winget install -e --id valinet.ExplorerPatcher; #if win11
-winget install -e --id cangzhang.champ-r;
-
-#admin now
+#open with admin for this
 irm christitus.com/win | iex
 
 
