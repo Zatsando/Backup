@@ -17,7 +17,7 @@ scoop bucket add games;
 scoop bucket add nonportable;
 
 #install scoop packages
-scoop install firefox brave winget sharex nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf;
+scoop install flameshot firefox brave winget nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio mailspring streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf;
 
 #brave fix
 New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Browser/User Data" -Target "$env:USERPROFILE\scoop\persist\brave\User Data"
