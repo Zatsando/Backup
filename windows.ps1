@@ -23,7 +23,7 @@ scoop install nilesoft-shell context-menu-manager flameshot firefox brave winget
 New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Browser/User Data" -Target "$env:USERPROFILE\scoop\persist\brave\User Data"
 
 #install np scoops
-sudo scoop install open-shell-np parsec-np wireguard-np;
+sudo scoop install open-shell-np parsec-np wireguard-np virtualbox-np;
 
 #open with admin for this
 irm christitus.com/win | iex
