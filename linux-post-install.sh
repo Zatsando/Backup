@@ -11,11 +11,11 @@ sudo fc-cache -f -v
 #swap
 swapon;
 sudo swapoff /dev/dm-2;
-rm /dev/dm-2;
-dd if=/dev/zero of=/swapfile bs=1M count=16384;
-chmod 600 /swapfile;
-mkswap /swapfile;
-swapon /swapfile;
+sudo rm /dev/dm-2;
+sudo dd if=/dev/zero of=/swapfile bs=1M count=16384;
+sudo chmod 600 /swapfile;
+sudo mkswap /swapfile;
+sudo swapon /swapfile;
 
 #enable wayland
 sudo nano /etc/gdm3/custom.conf;
