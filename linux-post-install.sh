@@ -38,6 +38,7 @@ flatpak install flathub net.lutris.Lutris -y;
 flatpak install flathub com.protonvpn.www -y;
 flatpak install flathub uk.org.greenend.chiark.sgtatham.putty -y;
 flatpak install flathub com.parsecgaming.parsec -y;
+flatpak install flathub md.obsidian.Obsidian -y;
 
 #nodejs lts
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
