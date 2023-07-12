@@ -25,6 +25,9 @@ New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Bro
 #install np scoops
 sudo scoop install open-shell-np parsec-np wireguard-np virtualbox-np;
 
+#wget
+wget https://github.com/cangzhang/champ-r/releases/download/v2.0.2-b7/champr-v2.0.2-b7.zip -o champr.zip
+
 #open with admin for this
 irm christitus.com/win | iex
 
