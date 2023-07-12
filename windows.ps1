@@ -17,7 +17,7 @@ scoop bucket add games;
 scoop bucket add nonportable;
 
 #install scoop packages
-scoop install vcredist2022 windowsdesktop-runtime vcredist2013 aria2 scrcpy snappy-driver-installer-origin openrgb chatterino legendary thunderbird nilesoft-shell context-menu-manager flameshot firefox brave winget nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf adb;
+scoop install vcredist2022 windowsdesktop-runtime vcredist2013 aria2 obsidian scrcpy snappy-driver-installer-origin openrgb chatterino legendary thunderbird nilesoft-shell context-menu-manager flameshot firefox brave winget nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller nextcloud putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf adb;
 
 #brave fix
 New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Browser/User Data" -Target "$env:USERPROFILE\scoop\persist\brave\User Data"
