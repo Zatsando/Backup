@@ -22,7 +22,6 @@ sudo nano /etc/gdm3/custom.conf;
 
 #flatpaks
 flatpak install flathub org.flameshot.Flameshot -y;
-flatpak install flathub com.nextcloud.desktopclient.nextcloud -y;
 flatpak install flathub com.github.bluesabre.darkbar -y;
 flatpak install flathub org.telegram.desktop -y;
 flatpak install flathub com.usebottles.bottles -y;
@@ -34,10 +33,8 @@ flatpak install flathub com.valvesoftware.Steam -y;
 flatpak install flathub org.videolan.VLC -y;
 flatpak install flathub org.mozilla.Thunderbird -y;
 flatpak install flathub org.libreoffice.LibreOffice -y;
-flatpak install flathub net.lutris.Lutris -y;
 flatpak install flathub com.protonvpn.www -y;
 flatpak install flathub uk.org.greenend.chiark.sgtatham.putty -y;
-flatpak install flathub com.parsecgaming.parsec -y;
 flatpak install flathub md.obsidian.Obsidian -y;
 
 #nodejs lts
