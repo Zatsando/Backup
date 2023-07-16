@@ -26,12 +26,13 @@ New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Bro
 sudo scoop install wireguard-np virtualbox-np
 
 #wget
-wget https://github.com/cangzhang/champ-r/releases/download/v2.0.2-b7/champr-v2.0.2-b7.zip -o champr.zip
 wget https://proton.me/download/drive/windows/Proton%20Drive%20Setup%201.3.6.exe -o drive.exe
 ./drive.exe
 
 #classic context menu
 reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+taskkill /f /im explorer.exe
+start explorer.exe
 
 #open with admin for this
 irm christitus.com/win | iex
