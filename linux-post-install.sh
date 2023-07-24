@@ -1,29 +1,39 @@
 #!/bin/sh
 
+#firstofall
+sudo apt update
+sudo apt upgrade -y
+
 #change hostname name
-hostnamectl set-hostname ZatsLaptop;
+hostnamectl set-hostname ZatsLaptop
+
+#elementary ppa
+sudo add-apt-repository ppa:elementary-os/stable
+
+#if they are installed
+sudo apt remove --purge google-chrome-stable vlc gimp libreoffice* -y
+sudo apt autoremove && sudo apt autoclean -y
 
 #native packages
-wireguard ttf-mscorefonts-installer ubuntu-restricted-extras android-tools-adb android-tools-fastboot streamlink python3 git neofetch openjdk-17-jdk
-
+sudo apt install wireguard appcenter ttf-mscorefonts-installer ubuntu-restricted-extras android-tools-adb android-tools-fastboot streamlink python3 git neofetch openjdk-17-jdk xfce4-appmenu-plugin -y
 sudo fc-cache -f -v
 
 #swap
-swapon;
-sudo swapoff /dev/dm-2;
-sudo rm /dev/dm-2;
-sudo dd if=/dev/zero of=/swapfile bs=1M count=16384;
-sudo chmod 600 /swapfile;
-sudo mkswap /swapfile;
-sudo swapon /swapfile;
+swapon
+sudo swapoff /dev/dm-2
+sudo rm /dev/dm-2
+sudo dd if=/dev/zero of=/swapfile bs=1M count=17180
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
 
 #enable wayland
-sudo nano /etc/gdm3/custom.conf;
+#sudo nano /etc/gdm3/custom.conf;
 
 #flatpaks
+flatpak install flathub org.mozilla.firefox -y;
 flatpak install flathub org.flameshot.Flameshot -y;
 flatpak install flathub com.github.bluesabre.darkbar -y;
-flatpak install flathub org.telegram.desktop -y;
 flatpak install flathub com.usebottles.bottles -y;
 flatpak install flathub org.signal.Signal -y;
 flatpak install flathub com.stremio.Stremio -y;
@@ -37,14 +47,17 @@ flatpak install flathub com.protonvpn.www -y;
 flatpak install flathub uk.org.greenend.chiark.sgtatham.putty -y;
 flatpak install flathub md.obsidian.Obsidian -y;
 
+#wget
+wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.flatpak -o rustdesk-1.2.1-x86_64.flatpak
+
 #nodejs lts
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash;
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 #restart gnome-terminal
-nvm install --lts;
+nvm install --lts
 
 #java
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64; 
-export PATH=$PATH:$JAVA_HOME/bin;
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
 
 #intel/amd graphics
 sudo add-apt-repository ppa:kisak/kisak-mesa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt upgrade && sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
