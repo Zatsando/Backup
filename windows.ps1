@@ -17,16 +17,16 @@ scoop bucket add games
 scoop bucket add nonportable
 
 #install scoop packages
-scoop install vcredist2022 windowsdesktop-runtime vcredist2013 aria2 obsidian scrcpy openrgb chatterino legendary thunderbird context-menu-manager flameshot firefox brave winget nodejs-lts android-studio obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf adb
+scoop install vcredist2022 windowsdesktop-runtime vcredist2013 sonixd aria2 obsidian scrcpy openrgb chatterino thunderbird context-menu-manager flameshot firefox brave winget nodejs-lts obs-studio vlc discord steam vscode signal temurin-lts-jdk krita 7zip qbittorrent notepadplusplus stremio streamlink python libreoffice kdeconnect eartrumpet bulk-crap-uninstaller putty heroic-games-launcher playnite fastfetch rustdesk nano sudo ani-cli mpv fzf adb
 
-#brave fix
+#brave new window fix
 New-Item -ItemType Junction -Path "$env:AppData/../Local/BraveSoftware/Brave-Browser/User Data" -Target "$env:USERPROFILE\scoop\persist\brave\User Data"
 
 #install np scoops
 sudo scoop install wireguard-np virtualbox-np
 
 #wget
-wget https://proton.me/download/drive/windows/Proton%20Drive%20Setup%201.3.6.exe -o drive.exe
+wget https://proton.me/download/drive/windows/Proton%20Drive%20Setup%201.3.9.exe -o drive.exe
 ./drive.exe
 
 #classic context menu

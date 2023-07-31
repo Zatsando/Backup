@@ -25,8 +25,4 @@ sudo chown $USERNAME:users yay
 cd yay
 makepkg -si
 
-yay -S pantheon-unstable gala-git switchboard-plug-pantheon-tweaks-git pantheon-print file-roller
-
-yay -S wingpanel-standalone-git
-
-yay -S wingpanel-indicator-ayatana-git
+yay -S pantheon-unstable gala-git wingpanel-standalone-git switchboard-plug-pantheon-tweaks-git pantheon-print file-roller

@@ -7,6 +7,11 @@ sudo apt upgrade -y
 #change hostname name
 hostnamectl set-hostname ZatsLaptop
 
+#flatpak install
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 #elementary ppa
 sudo add-apt-repository ppa:elementary-os/stable
 
@@ -48,10 +53,12 @@ flatpak install flathub uk.org.greenend.chiark.sgtatham.putty -y;
 flatpak install flathub md.obsidian.Obsidian -y;
 
 #wget
-wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.flatpak -o rustdesk-1.2.1-x86_64.flatpak
+wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.deb
+sudo dpkg -i rustdesk-1.2.1-x86_64.deb
 
 #nodejs lts
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+exit
 #restart gnome-terminal
 nvm install --lts
 
