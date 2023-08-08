@@ -20,7 +20,7 @@ sudo apt remove --purge google-chrome-stable vlc gimp libreoffice* -y
 sudo apt autoremove && sudo apt autoclean -y
 
 #native packages
-sudo apt install wireguard appcenter ttf-mscorefonts-installer ubuntu-restricted-extras android-tools-adb android-tools-fastboot streamlink python3 git neofetch openjdk-17-jdk xfce4-appmenu-plugin -y
+sudo apt install wireguard nodejs steam ttf-mscorefonts-installer ubuntu-restricted-extras adb fastboot streamlink python3 git neofetch openjdk-17-jdk -y
 sudo fc-cache -f -v
 
 #swap
@@ -36,7 +36,6 @@ sudo swapon /swapfile
 #sudo nano /etc/gdm3/custom.conf;
 
 #flatpaks
-flatpak install flathub org.mozilla.firefox -y;
 flatpak install flathub org.flameshot.Flameshot -y;
 flatpak install flathub com.github.bluesabre.darkbar -y;
 flatpak install flathub com.usebottles.bottles -y;
@@ -44,13 +43,12 @@ flatpak install flathub org.signal.Signal -y;
 flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub org.qbittorrent.qBittorrent -y;
 flatpak install flathub com.discordapp.Discord -y;
-flatpak install flathub com.valvesoftware.Steam -y;
 flatpak install flathub org.videolan.VLC -y;
 flatpak install flathub org.mozilla.Thunderbird -y;
-flatpak install flathub org.libreoffice.LibreOffice -y;
 flatpak install flathub com.protonvpn.www -y;
 flatpak install flathub uk.org.greenend.chiark.sgtatham.putty -y;
 flatpak install flathub md.obsidian.Obsidian -y;
+flatpak install flathub com.heroicgameslauncher.hgl -y;
 
 #wget
 wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.deb
