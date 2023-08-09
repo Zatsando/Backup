@@ -12,15 +12,12 @@ sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-#elementary ppa
-sudo add-apt-repository ppa:elementary-os/stable
-
 #if they are installed
 sudo apt remove --purge google-chrome-stable vlc gimp libreoffice* -y
 sudo apt autoremove && sudo apt autoclean -y
 
 #native packages
-sudo apt install wireguard nodejs steam ttf-mscorefonts-installer ubuntu-restricted-extras adb fastboot streamlink python3 git neofetch openjdk-17-jdk -y
+sudo apt install steam wireguard nodejs nodejs steam ttf-mscorefonts-installer ubuntu-restricted-extras adb fastboot streamlink python3 git neofetch openjdk-17-jdk -y
 sudo fc-cache -f -v
 
 #swap
@@ -49,16 +46,12 @@ flatpak install flathub com.protonvpn.www -y;
 flatpak install flathub uk.org.greenend.chiark.sgtatham.putty -y;
 flatpak install flathub md.obsidian.Obsidian -y;
 flatpak install flathub com.heroicgameslauncher.hgl -y;
+flatpak install flathub net.davidotek.pupgui2 -y;
+flatpak install flathub com.visualstudio.code -y;
 
 #wget
-wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.deb
-sudo dpkg -i rustdesk-1.2.1-x86_64.deb
-
-#nodejs lts
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
-exit
-#restart gnome-terminal
-nvm install --lts
+wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.AppImage
+sudo chmod +x rustdesk-1.2.1-x86_64.AppImage
 
 #java
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
@@ -73,3 +66,7 @@ sudo sh -c 'sysctl -w abi.vsyscall32=0' && sudo sysctl -w abi.vsyscall32=0
 #git config
 git config --global user.name "zachvlat"
 git config --global user.email "zachariasvlatakis@gmail.com"
+
+#final
+sudo apt autoremove -y
+sudo apt autoclean
