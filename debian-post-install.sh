@@ -17,8 +17,7 @@ sudo apt remove --purge google-chrome-stable vlc gimp libreoffice* -y
 sudo apt autoremove && sudo apt autoclean -y
 
 #native packages
-sudo apt install steam wireguard nodejs nodejs steam ttf-mscorefonts-installer ubuntu-restricted-extras adb fastboot streamlink python3 git neofetch openjdk-17-jdk -y
-sudo fc-cache -f -v
+sudo apt install wireguard nodejs nodejs adb fastboot streamlink python3 git neofetch openjdk-17-jdk -y
 
 #swap
 swapon
@@ -33,9 +32,7 @@ sudo swapon /swapfile
 #sudo nano /etc/gdm3/custom.conf;
 
 #flatpaks
-flatpak install flathub org.flameshot.Flameshot -y;
-flatpak install flathub com.github.bluesabre.darkbar -y;
-flatpak install flathub com.usebottles.bottles -y;
+flatpak install flathub com.github.tchx84.Flatseal -y;
 flatpak install flathub org.signal.Signal -y;
 flatpak install flathub com.stremio.Stremio -y;
 flatpak install flathub org.qbittorrent.qBittorrent -y;
@@ -48,6 +45,7 @@ flatpak install flathub md.obsidian.Obsidian -y;
 flatpak install flathub com.heroicgameslauncher.hgl -y;
 flatpak install flathub net.davidotek.pupgui2 -y;
 flatpak install flathub com.visualstudio.code -y;
+flatpak install flathub com.valvesoftware.Steam -y;
 
 #wget
 wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.AppImage
