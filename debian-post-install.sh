@@ -46,6 +46,15 @@ flatpak install flathub com.heroicgameslauncher.hgl -y;
 flatpak install flathub net.davidotek.pupgui2 -y;
 flatpak install flathub com.visualstudio.code -y;
 flatpak install flathub com.valvesoftware.Steam -y;
+flatpak install flathub com.brave.Browser -y;
+flatpak install flathub im.riot.Riot -y;
+flatpak install flathub com.chatterino.chatterino -y;
+flatpak install flathub network.loki.Session -y;
+flatpak install flathub org.telegram.desktop -y;
+flatpak install flathub com.github.bajoja.indicator-kdeconnect -y;
+flatpak install flathub org.kde.krita -y;
+flatpak install flathub com.obsproject.Studio -y;
+flatpak install flathub com.github.KRTirtho.Spotube -y;
 
 #wget
 wget https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.AppImage
